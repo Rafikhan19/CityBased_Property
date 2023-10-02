@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+
+.image-container {
+  position: relative;
+ /* Set the height of the container */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-container img {
+ /* Maintain aspect ratio */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container h5 {
+  position: absolute;
+  top: 16%; /* Position the text 50% from the top of the container */
+  left: 20%; 
+  border-radius: 25px;
+  transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+  color: blue; /* Set the color of the text */
+  font-size: 10px; /* Set the font size of the text */
+  text-align: center; /* Center-align the text */
+  background-color: white; /* Add a semi-transparent background */
+  padding: 10px 20px; /* Add padding to the text */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-container .love {
+  position: absolute;
+right: 60px;
+top: 20px;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+padding: 0.5rem;
+background-color: white;
+color: blue;
+  transform: translate(-50%, -50%);  /* Add padding to the text */
 }
